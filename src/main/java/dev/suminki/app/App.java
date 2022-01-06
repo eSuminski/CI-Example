@@ -29,7 +29,7 @@ public class App {
         app.get("/greeting/{id}", greetingController.getGreeting);
 
         logger.info("Starting Javalin");
-        app.start();
+        app.start(8081);
 
     }
 }
