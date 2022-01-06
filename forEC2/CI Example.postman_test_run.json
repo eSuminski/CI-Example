@@ -1,0 +1,203 @@
+{
+	"id": "fd89f303-aa5a-454d-afad-d459b992d519",
+	"name": "CI Example",
+	"timestamp": "2022-01-05T17:09:43.361Z",
+	"collection_id": "15882870-9e729c9b-c60e-4e42-af6e-92e44b14d716",
+	"folder_id": 0,
+	"environment_id": "f8290e3a-f18f-4407-b6e1-05b8ea91fc82",
+	"totalPass": 10,
+	"totalFail": 0,
+	"results": [
+		{
+			"id": "6bc1a254-a060-4d9e-9291-ca86a91c013e",
+			"name": "Get Greeting One",
+			"url": "http://localhost:8080/greeting/1",
+			"time": 663,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"check message 1": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check message 1": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				663
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"check message 1": true
+				}
+			]
+		},
+		{
+			"id": "fc27cd8e-0bf1-4259-961e-78bbe68641f1",
+			"name": "Get Greeting Two",
+			"url": "http://localhost:8080/greeting/2",
+			"time": 212,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"check message 2": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check message 2": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				212
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"check message 2": true
+				}
+			]
+		},
+		{
+			"id": "b27b66f2-0c73-4884-bcf9-33ba57e20521",
+			"name": "Get Greeting Three",
+			"url": "http://localhost:8080/greeting/3",
+			"time": 41,
+			"responseCode": {
+				"code": 200,
+				"name": "OK"
+			},
+			"tests": {
+				"Status code is 200": true,
+				"check message 3": true
+			},
+			"testPassFailCounts": {
+				"Status code is 200": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check message 3": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				41
+			],
+			"allTests": [
+				{
+					"Status code is 200": true,
+					"check message 3": true
+				}
+			]
+		},
+		{
+			"id": "d7ab4306-2013-443e-8e02-aa3bab346fa8",
+			"name": "Get Greeting With Bad ID",
+			"url": "http://localhost:8080/greeting/111",
+			"time": 60,
+			"responseCode": {
+				"code": 404,
+				"name": "Not Found"
+			},
+			"tests": {
+				"Status code is 404": true,
+				"check error message 1": true
+			},
+			"testPassFailCounts": {
+				"Status code is 404": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check error message 1": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				60
+			],
+			"allTests": [
+				{
+					"Status code is 404": true,
+					"check error message 1": true
+				}
+			]
+		},
+		{
+			"id": "0c842fad-d28d-4a7c-959b-fe3d03ddc94a",
+			"name": "Get Greeting With Non-Numeric ID",
+			"url": "http://localhost:8080/greeting/one",
+			"time": 7,
+			"responseCode": {
+				"code": 418,
+				"name": "I'm a Teapot"
+			},
+			"tests": {
+				"Status code is 418": true,
+				"check error message 2": true
+			},
+			"testPassFailCounts": {
+				"Status code is 418": {
+					"pass": 1,
+					"fail": 0
+				},
+				"check error message 2": {
+					"pass": 1,
+					"fail": 0
+				}
+			},
+			"times": [
+				7
+			],
+			"allTests": [
+				{
+					"Status code is 418": true,
+					"check error message 2": true
+				}
+			]
+		}
+	],
+	"count": 1,
+	"totalTime": 983,
+	"collection": {
+		"requests": [
+			{
+				"id": "6bc1a254-a060-4d9e-9291-ca86a91c013e",
+				"method": "GET"
+			},
+			{
+				"id": "fc27cd8e-0bf1-4259-961e-78bbe68641f1",
+				"method": "GET"
+			},
+			{
+				"id": "b27b66f2-0c73-4884-bcf9-33ba57e20521",
+				"method": "GET"
+			},
+			{
+				"id": "d7ab4306-2013-443e-8e02-aa3bab346fa8",
+				"method": "GET"
+			},
+			{
+				"id": "0c842fad-d28d-4a7c-959b-fe3d03ddc94a",
+				"method": "GET"
+			}
+		]
+	}
+}

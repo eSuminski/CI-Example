@@ -1,0 +1,14 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd" >
+<suite name="CI tests">
+    <test name="Greeting DAO Tests">
+        <classes>
+            <class name="com.suminski.tests.dalt.GreetingDAOTests"/>
+        </classes>
+    </test>
+    <test name="Greeting Service Tests">
+        <classes>
+            <class name="com.suminski.tests.slt.GreetingServiceTests"/>
+        </classes>
+    </test>
+</suite>
