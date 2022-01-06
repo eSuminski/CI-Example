@@ -17,6 +17,11 @@ public class GreetingController {
         this.greetingService = greetingService;
     }
 
+    public Handler landingPage = ctx -> {
+        ctx.result("This is the landing page!");
+        ctx.status(200);
+    };
+
     public Handler getGreeting = ctx -> {
         try{
             int id = Integer.parseInt(ctx.pathParam("id"));

@@ -26,6 +26,8 @@ public class App {
         GreetingService greetingService = new GreetingServiceImp(greetingDAO);
         GreetingController greetingController = new GreetingController(greetingService);
 
+        app.get("/", greetingController.landingPage);
+
         app.get("/greeting/{id}", greetingController.getGreeting);
 
         logger.info("Starting Javalin");
