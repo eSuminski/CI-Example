@@ -33,7 +33,7 @@ public class App {
         app.get("/greeting/{id}", greetingController.getGreeting);
 
         logger.info("Starting Javalin on port ");
-        app.start(7000);
+        app.start(8081);
 
     }
 }
