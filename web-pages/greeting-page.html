@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Greeting Page</title>
+</head>
+<body>
+    <h1 id="title">Please select a greeting!</h1>
+    <div id="container">
+        <button onclick="getGreetingMessage(1)" type="button" class="btn btn-primary btn-lg" id="leftButton">Greeting One</button>
+        <button onclick="getGreetingMessage(2)" type="button" class="btn btn-success btn-lg" id="centerButton">Greeting Two</button>
+        <button onclick="getGreetingMessage(3)"type="button" class="btn btn-warning btn-lg" id="rightButton" style="text-align: right;">Greeting Three</button>
+        
+    </div>
+    <p id="greeting" style="text-align: center;">click a button above to get a greeting!</p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="greetingMethods.js"></script>
+</body>
+</html>
